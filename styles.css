@@ -84,29 +84,10 @@ footer {
     height: 100vh;
 }
 
-.floating-video {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 600px;
-    height: auto;
-    z-index: 10000;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
-}
 
 .video-container {
     text-align: center;
     margin-top: 20px;
-}
-
-.floating-video {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 300px;
-    height: auto;
-    z-index: 10000;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
 /* Modal styling */
@@ -132,14 +113,20 @@ footer {
     transform: translateY(-50%);
 }
 
+#modalVideo {
+    width: 100%;
+    height: auto;
+}
+
 .close {
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 25px;
     color: #fff;
     font-size: 35px;
     font-weight: bold;
     cursor: pointer;
+    z-index: 10001;
 }
 
 .close:hover,
@@ -150,7 +137,4 @@ footer {
     cursor: pointer;
 }
 
-#modalVideo {
-    width: 100%;
-    height: auto;
-}
+
